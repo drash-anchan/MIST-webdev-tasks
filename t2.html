@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML tags explanation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2>Here I will explain the uses of various HTML tags</h2>
+    </header>
+    <br>
+    <hr>
+        <section id="text" style="margin-top:1rem">
+
+          <div class="card">
+            <h3><center>Headings</center></h3>
+            <h2><center>H2 — section heading</center></h2>
+            <h3><center>H3 — subsection</center></h3>
+            <h4><center>H4</center></h4>
+            <h5><center>H5</center></h5>
+            <h6><center>H6</center></h6>
+          </div>
+          <hr>
+          <div class="card" style="margin-top:0.6rem">
+            <h3><center>Inline text tags</center></h3>
+            <p>This is a <em>paragraph</em> with examples: <strong>strong</strong>, <b>bold</b>, <i>italic</i>, <u>underline</u>, <mark>highlight</mark>, <small>fine print</small>, <sub>subscript</sub>, <sup>superscript</sup>.</p>
+            <p>Technical / keyboard / sample text: <code>code()</code>, <var>x</var>, <samp>sample output</samp>, <kbd>Ctrl+C</kbd>, <s>strikethrough</s>.</p>
+            <p>Quotation and citation: <cite>Famous book</cite>, <q>short inline quote</q>, </p>
+          </div>
+          <hr>
+
+          <div class="card" style="margin-top:0.6rem">
+            <h3><center>TAGS USED IN THE BODY OF HTML</center></h3>
+            <p><strong>&lt;p&gt;, &lt;hr&gt;, &lt;br&gt;, &lt;pre&gt;</strong></p>
+            <p>Paragraphs (<code>&lt;p&gt;</code>) are for blocks of text. Use <code>&lt;br&gt;</code> for single line breaks. <code>&lt;hr&gt;</code> represents a thematic break.</p>
+          </div>
+
+        </section>
+        <hr>
+
+        <section id="media" style="margin-top:1rem">
+          <h2>Media, images and graphics in HTML</h2>
+          <div class="card">
+              <source media="(min-width:800px)" srcset="https://via.placeholder.com/800x200.png?text=Large+image">
+              <img src="cat.jpg" style="display: block; margin: 0 auto;" alt="you missed a good meme" width="550" height="450">
+
+            <h3>Audio & Video</h3>
+            <p>Use <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> with proper <code>controls</code>, <code>&lt;source&gt;</code> and <code>&lt;track&gt;</code> for captions.</p>
+            <video controls width="320" preload="metadata">
+              <source src="" type="video/mp4">
+              Your browser does not support the video 
+            </video>
+            <audio controls>
+              <source src="" type="audio/mpeg">
+              Your browser does not support the audio
+            </audio>
+
+            <h3>Embedded content</h3>
+            <p>&lt;iframe&gt;, &lt;embed&gt;, &lt;object&gt; — for third-party content and plugins</p>
+            <iframe title="Example iframe" srcdoc="&lt;h4&gt;Iframe demo&lt;/h4&gt;&lt;p&gt;This is sandboxed content.&lt;/p&gt;" width="100%" style="min-height:80px"></iframe>
+          </div>
+        </section>
+        <section id="forms" style="margin-top:1rem">
+          <h2>Forms, inputs and controls</h2>
+          <div class="card">
+            <form onsubmit="event.preventDefault(); alert('Form submitted (demo)')">
+              <fieldset>
+                <legend>Form</legend>
+
+                <label>Text: <input type="text" placeholder="text input"></label><br>
+                <label>Email: <input type="email" placeholder="you@domain"></label><br>
+                <label>Password: <input type="password"></label><br>
+                <label>Number: <input type="number" value="5"></label><br>
+                <label>Date: <input type="date"></label><br>
+                <label>Range: <input type="range" min="0" max="10"></label><br>
+
+                <label>Search: <input type="search"></label>
+                <label>Tel: <input type="tel"></label>
+                <label>URL: <input type="url"></label>
+                <label>Color: <input type="color"></label>
+
+                <p>Buttons</p>
+                <button type="submit">Submit</button>
+                <button type="button" onclick="alert('Button clicked')">Click</button>
+                <input type="reset" value="Reset">
+              </fieldset>
+            </form>
+          </div>
+        </section>
+        <section id="tables" style="margin-top:1rem">
+          <h2>Tabular data</h2>
+          <div class="card">
+            <table style="width:100%;border-collapse:collapse;border:1px solid #eef">
+              <colgroup><col style="width:40%"><col><col></colgroup>
+              <thead><tr><th>Item</th><th>Qty</th><th>Price</th></tr></thead>
+              <tbody>
+                <tr><td>Apple</td><td>10</td><td>₹10</td></tr>
+                <tr><td>Orange</td><td>5</td><td>₹20</td></tr>
+              </tbody>
+              <tfoot><tr><td>Total</td><td>15</td><td>₹30</td></tr></tfoot>
+            </table>
+          </div>
+        </section>
+        <nav>
+        <ul>
+            <li><a href="t3.html" target="_blank">Go to Next Page</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <br>
+    <footer> THIS IS FOOTER
+    </footer>
+  </div>
+</body>
+</html>
