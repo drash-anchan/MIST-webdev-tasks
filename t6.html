@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE END</title> 
-    <link rel="stylesheet" href="style.css"> 
+    <title>THE END</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <video id="myVideo" autoplay muted loop width="1200">
-  <source src="supriseee.mp4" type="video/mp4"> hehehe you just got rickrolled
-</video>
-
-<button onclick="enableSound()">Enable Sound</button>
-
-<script>
-  function enableSound() {
-    const vid = document.getElementById("myVideo");
-    vid.muted = false;
-    vid.play();
-  }
-</script>
-<hr>
-<a href="index.html" target="_blank">Go back to Homepage</a>
-
+<body class="bg-gradient-to-br from-gray-900 via-slate-800 to-gray-700 min-h-screen text-gray-100 font-sans p-8">
+    <div class="max-w-3xl mx-auto bg-gray-800/80 rounded-2xl shadow-2xl p-8 flex flex-col items-center">
+        <video id="myVideo" autoplay muted loop width="1000" class="rounded-2xl shadow-lg border-4 border-sky-400 mb-6">
+            <source src="supriseee.mp4" type="video/mp4"> hehehe you just got rickrolled
+        </video>
+        <button onclick="enableSound()" class="bg-sky-400 hover:bg-sky-600 text-white font-semibold py-2 px-6 rounded-lg shadow transition duration-200 transform hover:scale-105 mb-6">Enable Sound</button>
+        <hr class="border-t-2 border-sky-700 my-6 w-full">
+        <a href="index.html" target="_blank" class="bg-pink-500 hover:bg-pink-700 text-white font-semibold py-2 px-6 rounded-lg shadow transition duration-200 transform hover:scale-105">Go back to Homepage</a>
+    </div>
+    <script>
+      function enableSound() {
+        const vid = document.getElementById("myVideo");
+        vid.muted = false;
+        vid.play();
+      }
+    </script>
 </body>
 </html>
