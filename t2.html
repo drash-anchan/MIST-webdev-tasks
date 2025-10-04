@@ -4,9 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML tags explanation</title>
-  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gradient-to-br from-gray-900 via-slate-800 to-gray-700 min-h-screen text-gray-100 font-sans p-8">
+  <div class="max-w-3xl mx-auto bg-gray-800/80 rounded-2xl shadow-2xl p-8">
   <div class="container">
     <header>
       <h2>Here I will explain the uses of various HTML tags</h2>
@@ -70,17 +71,17 @@
               <fieldset>
                 <legend>Form</legend>
 
-                <label>Text: <input type="text" placeholder="text input"></label><br>
-                <label>Email: <input type="email" placeholder="you@domain"></label><br>
-                <label>Password: <input type="password"></label><br>
-                <label>Number: <input type="number" value="5"></label><br>
-                <label>Date: <input type="date"></label><br>
-                <label>Range: <input type="range" min="0" max="10"></label><br>
+                <label>Text: <dark-input><input type="text" class="bg-gray-800 text-gray-100 border border-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400" placeholder="text input"></dark-input></label><br>
+                <label>Email: <dark-input><input type="email" class="bg-gray-800 text-gray-100 border border-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400" placeholder="you@domain"></dark-input></label><br>
+                <label>Password: <dark-input><input type="password" class="bg-gray-800 text-gray-100 border border-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400"></dark-input></label><br>
+                <label>Number: <dark-input><input type="number" value="5" class="bg-gray-800 text-gray-100 border border-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400"></dark-input></label><br>
+                <label>Date: <dark-input><input type="date" class="bg-gray-800 text-gray-100 border border-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400"></dark-input></label><br>
+                <label>Range: <dark-input><input type="range" min="0" max="10" class="bg-gray-800 text-gray-100 border border-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400"></dark-input></label><br>
 
-                <label>Search: <input type="search"></label>
-                <label>Tel: <input type="tel"></label>
-                <label>URL: <input type="url"></label>
-                <label>Color: <input type="color"></label>
+                <label>Search: <dark-input><input type="search" class="bg-gray-800 text-gray-100 border border-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400"></dark-input></label><br>
+                <label>Tel: <dark-input><input type="tel" class="bg-gray-800 text-gray-100 border border-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400"></dark-input></label><br>
+                <label>URL: <dark-input><input type="url" class="bg-gray-800 text-gray-100 border border-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400"></dark-input></label><br>
+                <label>Color: <dark-input><input type="color" class="bg-gray-800 text-gray-100 border border-gray-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400"></dark-input></label><br>
 
                 <p>Buttons</p>
                 <button type="submit">Submit</button>
@@ -104,15 +105,18 @@
             </table>
           </div>
         </section>
+        <br>
+   
         <nav>
         <ul>
-            <li><a href="t3.html" target="_blank">Go to Next Page</a></li>
+            <li><a href="t3.html" target="_blank" class="bg-sky-400 hover:bg-sky-600 text-white font-semibold py-2 px-6 rounded-lg shadow transition duration-200 transform hover:scale-105">Next Page</a>
+            </div></li>
         </ul>
     </nav>
-    <hr>
     <br>
     <footer> THIS IS FOOTER
     </footer>
+  </div>
   </div>
 </body>
 </html>
